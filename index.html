@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cynosure - Employee Self Service</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <aside id="sidebar">
+    <div class="sidebar-logo">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="9" height="9" rx="2" fill="#1e2a4a" />
+        <rect x="13" y="2" width="9" height="9" rx="2" fill="#2563eb" />
+        <rect x="2" y="13" width="9" height="9" rx="2" fill="#2563eb" />
+        <rect x="13" y="13" width="9" height="9" rx="2" fill="#1e2a4a" />
+      </svg>
+    </div>
+
+    <div class="sidebar-icon active" data-bs-toggle="tooltip" title="Dashboard">
+      <i class="bi bi-grid-fill"></i>
+    </div>
+    <div class="sidebar-icon" data-bs-toggle="tooltip" title="People">
+      <i class="bi bi-people-fill"></i>
+    </div>
+    <div class="sidebar-icon" data-bs-toggle="tooltip" title="Analytics">
+      <i class="bi bi-bar-chart-fill"></i>
+    </div>
+    <div class="sidebar-icon" data-bs-toggle="tooltip" title="Tasks">
+      <i class="bi bi-check2-square"></i>
+    </div>
+    <div class="sidebar-icon" data-bs-toggle="tooltip" title="Messages">
+      <i class="bi bi-chat-left-dots-fill"></i>
+    </div>
+    <div class="sidebar-icon" data-bs-toggle="tooltip" title="Documents">
+      <i class="bi bi-file-earmark-text-fill"></i>
+    </div>
+    <div class="sidebar-icon" data-bs-toggle="tooltip" title="Help">
+      <i class="bi bi-question-circle-fill"></i>
+    </div>
+
+    <div class="sidebar-bottom">
+      <div class="sidebar-icon" data-bs-toggle="tooltip" title="Logout">
+        <i class="bi bi-power"></i>
+      </div>
+    </div>
+  </aside>
+
+  <header id="topbar">
+    <button id="mobile-nav-toggle" class="topbar-icon-btn">
+      <i class="bi bi-list"></i>
+    </button>
+
+    <div class="d-flex align-items-center gap-2">
+      <span style="font-size:15px; font-weight:800; color:#1e2a4a; letter-spacing:-0.5px;">CYNOSURE</span>
+      <span style="font-size:9px; color:#64748b; font-weight:400; line-height:1.1;">technology<br>strategy</span>
+    </div>
+    <div class="topbar-divider"></div>
+    <span class="topbar-brand">Employee Self Service</span>
+
+    <div class="topbar-right">
+      <span class="topbar-welcome">Welcome Employee</span>
+      <div class="topbar-icon-btn">
+        <i class="bi bi-link-45deg"></i>
+      </div>
+      <div class="topbar-user-avatar">E</div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div id="dash-header">
+      <span class="dash-title">Dashboard</span>
+      <div class="dash-year-selector">
+        <i class="bi bi-calendar3" style="font-size:12px;"></i>
+        <span>2025-2026</span>
+        <i class="bi bi-chevron-down" style="font-size:10px;"></i>
+      </div>
+    </div>
+
+    <div id="content">
+
+      <div class="greeting-row">
+        <h1 class="greeting-text">Hello kamlesh,</h1>
+        <button class="btn-create" id="btnCreate">
+          Create
+          <div class="plus-icon">+</div>
+        </button>
+      </div>
+
+      <div class="stats-row" id="statsRow"></div>
+
+      <div class="dashboard-body">
+        <div class="main-panel" id="mainPanel"></div>
+        <div class="feed-panel" id="feedPanel"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+
+</html>
